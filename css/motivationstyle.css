@@ -1,0 +1,461 @@
+body	{
+	font-family: "Lucida Sans", sans-serif;
+	margin: 0px;
+	position:relative;
+	line-height:1.64;
+}
+
+h2, h3	{
+	margin:25px;
+	}
+
+h4	{
+	font-weight:300px;
+	margin:0px 0px 0px;
+	font-size:18px;
+	}
+
+h1, h2	{text-align:center;}
+
+h1 {
+	font-family:mentone;
+	font-size: 50px;
+	}
+
+.jumbotron .overlay h1 {
+	font-size:63px;
+	padding-bottom:20px;
+	border-bottom:1px solid #FFF;
+	border-bottom-color:rgba(255,255,255,.35);
+	display:inline-block;
+	text-shadow:0 4px 3px rgba(0,0,0,.4),0 8px 13px rgba(0,0,0,.1),0 18px 23px rgba(0,0,0,.1);
+	}
+	
+.jumbotron .overlay .lead {font-size:28px;}
+	
+h2 {
+	font-family: mentone;
+	font-size: 50px;
+	color:#311d35;}
+
+p	{
+	margin: 25px;
+}
+
+.fadeIn {opacity:0;}
+
+ul.no-bullets {list-style-type:none;}
+
+#abilities ul > li {
+	padding:3px 0;
+	min-height:30px;
+}
+
+#abilities ul > li .ability-title {
+	display:inline-block
+	width:60%
+}
+
+/* Hover formatting for Abilities */
+#abilities ul > li .ability-title:hover,
+#abilities ul > li .ability-title:focus,{
+	background-color: #f5f5dc;
+}
+
+
+a {
+  color: #533f5a; 
+  &:hover {
+    color: #4fb3e8;
+
+  }}
+
+.bgWhite {
+	background-color:white;
+	width:100%;
+	padding-top:70px;
+}
+
+.bgPurple {
+	background-image: url(../images/footerBackground.png);
+	background-attachment:relative;
+	background-repeat:no-repeat;
+	background-size:cover;
+	max-width:100%;
+	padding-top:70px;
+}
+
+.bgBeige {
+	background-color:#f5f5dc;
+	width:100%;
+	padding-top:70px;
+}
+
+.pad50 {padding:50px 50px;}
+.m200lr {margin:0px 200px;}
+
+.row {padding:0px 0px 25px;}
+
+p.experience-period {
+	font-style:italic;
+	padding:0px;
+	margin:0px 0px 15px;
+}
+
+p.degree {
+	padding:0px;
+	margin:0px;
+}
+
+span.experience-details {
+	padding:10px 0px 0px;
+}
+
+.separator {padding:0px 2px;}
+
+/*Jumbotron and Overlay CSS for the website's landing page*/
+.jumbotron{
+	background-image: url("../images/ualbanyFountain.jpg");
+	background-attachment:fixed;
+	background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	height:100vh;
+	position:relative;
+	z-index:-1;
+	background-repeat:no-repeat;
+	text-align: center;
+	color:white;
+	text-shadow: 1px 1px black;
+	padding: 0;
+	margin: 0;
+}
+
+.overlay{
+	background-color:#311d35;
+	background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	height:100vh;
+	opacity: 0.90;
+	color:white;
+	text-shadow: 1px 1px black;
+}
+
+.vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding:0;
+    margin:0;
+    
+}
+
+/*Animations for the landing page's button*/
+@keyframes letsgetgoing {
+     0%,100%{padding-top:20px}
+     50%{padding-top:28px}
+    }
+
+@-webkit-keyframes letsgetgoing {
+     0%,100%{padding-top:20px}
+     50%{padding-top:28px}
+    }
+
+@-moz-keyframes letsgetgoing {
+     0%,100%{padding-top:20px}
+     50%{padding-top:28px}
+    }
+
+.chevron-down:before{content:"\f078"} 
+
+.jumbotron .scroll-button {
+    background-color: #796702;
+    border: none;
+    color: black;
+    padding: 8px 32px;
+    text-decoration: none;
+    display:block;
+    font-size: 16px;
+    bottom:0;
+    right:46%;
+    position:absolute;
+    height:80px;
+    width: 110px;
+    z-index: 1;
+}
+
+.jumbotron .scroll-button .fa-chevron-down {
+	color:#FFF;
+	font-size:30px;
+	padding-right:2px;
+	padding-top:20px;
+	-webkit-animation-name:letsgetgoing;
+	-moz-animation-name:letsgetgoing;
+	animation-name:letsgetgoing;
+	-webkit-animation-duration:1.2s;
+	-moz-animation-duration:1.2s;
+	animation-duration:1.2s;
+	-webkit-animation-timing-function:linear;
+	-moz-animation-timing-function:linear;
+	animation-timing-function:linear;
+	-webkit-animation-iteration-count:infinite;
+	-moz-animation-iteration-count:infinite;
+	animation-iteration-count:infinite;
+	animation-direction:normal;
+}
+
+/*Navbar CSS*/
+.navbar-default {
+    background-color: #311d35;
+    border-color: #E7E7E7;
+    margin-bottom: .1px;
+    z-index:1;
+    -webkit-box-shadow: 5px 5px 5px #555;
+    -moz-box-shadow:    5px 5px 5px #555;
+    box-shadow:         5px 5px 5px #555;
+}
+
+
+/* Navbar title */
+.navbar-default .navbar-brand {
+    color: #FFFFFF;
+    text-shadow: 1px 1px black;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #FFFFFF;
+    text-shadow: 1px 1px black;
+}
+
+/* Navbar links */
+.navbar-default .navbar-nav > li > a {
+    color: #FFFFFF;
+    text-shadow: 1px 1px black;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #FFFFFF;
+    background-color:#533f5a;
+    text-shadow: 1px 1px black;
+    -webkit-transition: all .1s ease-in-out;
+       -moz-transition: all .1s ease-in-out;
+        -ms-transition: all .1s ease-in-out;
+         -o-transition: all .1s ease-in-out;
+            transition: all .1s ease-in-out;
+  }
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #FFFFFF;
+    text-shadow: 1px 1px black;
+    background-color: #796702;
+    
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #FFFFFF;
+    background-color: #796702;
+}
+
+/* CSS for sticky navigation (affix) */
+.affix {
+	top:0;
+	width:100%;
+	-webkit-transition: all 4s ease-in;
+    transition: all 4s ease-in;
+}
+
+.gallery{margin:0 auto;}
+
+.projectsgrid article {
+	cursor:pointer;
+	width:390px;
+	height:265px;
+	float:left;
+	margin:10px 15px;
+	overflow:hidden;
+	position:relative;
+	-webkit-box-shadow:3px 3px 5px #888;
+	-moz-box-shadow:3px 3px 5px #888;
+	box-shadow:3px 3px 5px #888;
+	}
+	
+.projectsgrid article .info,
+.projectsgrid article .info:after {
+	-webkit-transition:1s;
+	-moz-transition:1s;
+	-o-transition:1s;
+	position:absolute
+	}
+	
+.projectsgrid article .info {
+	transition:1s;
+	background:#533f5a;
+	color:white;
+	text-shadow: 1px 1px black;
+	left:0;
+	top:0;
+	width:40%;
+	height:100%;
+	padding:10px;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	}
+	
+.projectsgrid article .info>a,
+.projectsgrid article .info>a:hover {
+	background-color:#222;
+	color:#fff
+	text-shadow: 1px 1px black;
+	}
+	
+.projectsgrid article .info:after {
+	content:'';
+	display:block;
+	right:-20px;
+	top:50px;
+	border-top:20px solid transparent;
+	border-left:20px 
+	solid #533f5a;
+	border-bottom:20px solid transparent;
+	}
+	
+.projectsgrid article .info>a {
+	cursor:pointer;transition:.5s;
+	-webkit-transition:.5s;
+	-moz-transition:.5s;
+	-o-transition:.5s;
+	padding:0 10px;
+	}
+	
+.projectsgrid article:hover .info {
+	background-color:#796702;
+	color:white;
+	text-shadow: 1px 1px black;
+	}
+
+.projectsgrid article:hover .info:after {border-left-color:#796702;}
+
+.projectsgrid article img {
+	max-width:120%;
+	-webkit-transition:1s;
+	-moz-transition:1s;
+	transition:1s;
+	}
+	
+.projectsgrid article:hover img {
+	-webkit-transform:translateX(50px);
+	-moz-transform:translateX(50px);
+	transform:translateX(50px);
+	}
+
+.projectsgrid article .full {
+	transition:1s;
+	-webkit-transform:translateY(300px);
+	-moz-transform:translateY(300px);
+	position:absolute;
+	top:0;
+	left:0;
+	width:392px;
+	height:300px;
+	background-color:#f5f5dc;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:
+	border-box;padding:20px;
+	}
+	
+.projectsgrid article .full i {
+	cursor:pointer;
+	float:right;
+	}
+	
+.projectsgrid article.active .info {
+	-webkit-transform:translateX(-220px);
+	-moz-transform:translateX(-220px);
+	transform:translateX(-220px)
+	}
+	
+.projectsgrid article.active .full {
+	-webkit-transform:translateY(0);
+	-moz-transform:translateY(0);
+	-o-transform:translateY(0);
+	}
+
+article.active>div:nth-child(3)>p:nth-child(2){margin:0 20px 0 0;}
+
+.fa-caret-square-o-down:before{content:"\f150"; color:black;}
+.fa-caret-square-o-down{top:0;right:0; color:black;}
+
+.fa-linkedin-square:before{content:"\f08c";}
+
+.fa-linkedin-square{
+	font-size:40px;
+	margin-right:7px;
+	}
+	
+/* Computer screen view only */
+@media only screen and (min-width: 992px) {
+    #profileDetail { 
+        text-align: right; 
+
+    }
+}
+
+/* Tablet and mobile phone view */
+@media only screen and (max-width: 991px) {
+    #profile, #profileDetail { 
+        text-align: center; 
+
+    }
+    .jumbotron .overlay .lead {font-size:24px;}
+    
+    .scroll-button {
+    	width:100%;
+    	right:0;
+    	}
+    
+}
+
+/* Mobile Phone view */
+@media only screen and (max-width: 767px) {
+    .container-fluid { 
+        margin: 0px 0px;
+        padding: 0px 15px;
+    }
+    
+    .hideinphone {display:none;}
+    
+    .scroll-button {
+    	width:100%;
+    	right:0;
+    	}
+    
+    .jumbotron .overlay .lead {font-size:22px;}
+    
+    projectsgrid article {
+	cursor:pointer;
+	max-width:390px;
+	height:265px;
+	float:left;
+	margin:10px 15px;
+	overflow:hidden;
+	position:relative;
+	-webkit-box-shadow:3px 3px 5px #888;
+	-moz-box-shadow:3px 3px 5px #888;
+	box-shadow:3px 3px 5px #888;
+	}
+}
+
+
