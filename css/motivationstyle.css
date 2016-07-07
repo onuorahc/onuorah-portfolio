@@ -1,29 +1,65 @@
+@font-face{
+	font-family:'Open Sans';
+	font-style:normal;
+	font-weight:300;
+	src:local('Open Sans Light'),
+		local('OpenSans-Light'),
+		url(http://fonts.gstatic.com/s/opensans/v10/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) 
+		format('woff');
+}
+
+@font-face{
+	font-family:'Open Sans';
+	font-style:normal;
+	font-weight:600;
+	src:local('Open Sans Semibold'),
+		local('OpenSans-Semibold'),
+		url(http://fonts.gstatic.com/s/opensans/v10/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) 
+		format('woff');
+}
+
+@font-face{
+	font-family:'Open Sans';
+	font-style:normal;
+	font-weight:700;
+	src:local('Open Sans Bold'),
+	local('OpenSans-Bold'),
+	url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) 
+	format('woff');
+}
+
+.h1,.h2,.h3,.h4,.h5,.h6,b,body,
+h1,h2,h3,h4,h5,h6,html,strong{font-family:'Open Sans', sans-serif};
+
 body	{
-	font-family: "Lucida Sans", sans-serif;
 	margin: 0px;
 	position:relative;
 	line-height:1.64;
 }
 
-h2, h3	{
-	margin:25px;
-	}
-
-h4	{
-	font-weight:300px;
-	margin:0px 0px 0px;
-	font-size:18px;
-	}
+h1 {
+	font-size: 50px;
+	font-weight:700;
+}
 
 h1, h2	{text-align:center;}
+	
+h2, h3	{
+	margin:25px;
+	padding:0px 15px 0px 0px;
+	font-weight:300;
+}
 
-h1 {
-	font-family:mentone;
-	font-size: 50px;
-	}
+h4	{
+	font-weight:700;
+	margin:0px 0px 0px;
+	font-size:18px;
+}
+
 
 .jumbotron .overlay h1 {
 	font-size:63px;
+	font-weight:500;
 	padding-bottom:20px;
 	border-bottom:1px solid #FFF;
 	border-bottom-color:rgba(255,255,255,.35);
@@ -34,8 +70,8 @@ h1 {
 .jumbotron .overlay .lead {font-size:28px;}
 	
 h2 {
-	font-family: mentone;
 	font-size: 50px;
+	font-weight: 275px;
 	color:#311d35;}
 
 p	{
@@ -65,8 +101,9 @@ ul.no-bullets {list-style-type:none;}
 
 a {
   color: #533f5a; 
+  text-decoration:non:
   &:hover {
-    color: #4fb3e8;
+    color: #796702;
 
   }}
 
@@ -99,7 +136,7 @@ a {
 p.experience-period {
 	font-style:italic;
 	padding:0px;
-	margin:0px 0px 15px;
+	margin:5px 0px 15px;
 }
 
 p.degree {
@@ -401,9 +438,20 @@ article.active>div:nth-child(3)>p:nth-child(2){margin:0 20px 0 0;}
 .fa-linkedin-square:before{content:"\f08c";}
 
 .fa-linkedin-square{
-	font-size:40px;
+	font-size:60px;
 	margin-right:7px;
 	}
+
+#contact a {
+	color:#f5f5dc;
+	text-decoration:none;
+	}
+#contact a:hover {
+	color:#796702;
+	text-decoration:none;
+	}	
+.contactColor {color:#f5f5dc;}
+#contact input .text {color:#aaaaaa;}
 	
 /* Computer screen view only */
 @media only screen and (min-width: 992px) {

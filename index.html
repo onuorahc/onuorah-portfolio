@@ -11,6 +11,8 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 <link href="css/motivationstyle.css" rel="stylesheet">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="images/favicon.ico" type="image/ico" />
 
 
 <!-- Enabling HTML5 tags for older IE browsers -->
@@ -25,7 +27,7 @@
 			
 			<div class="overlay">
 				<div class="vertical-align">
-				<img src="images/OnuorahLogo.png" alt="Chris Onuorah logo" height="140" width="140">
+				<img src="images/OnuorahLogo.png" alt="Chris Onuorah logo" height="140" width="140"><br>
 				<h1>Chris Onuorah</h1>
 				<p class="lead">Interactive Portfolio</p>
 				</div>
@@ -66,7 +68,6 @@
 </nav>
 
 <!-- Defining my profile -->
-<!--<div class="panel panel-default">-->
 <div class="bgWhite" >
 <div class="container-fluid p50 m200lr" id="profile">
 	<h2>Profile</h2>
@@ -372,26 +373,6 @@ the Education Opportunity Program) using Hypertext Markup Language (HTML) and Ca
 <div id="projectHolder" class="container-fluid p50 m200lr">
 		<h2>Projects</h2>
 		<hr>
-			<!--<div class="row">
-			  <div class="col-md-4" align="center">
-			  	<h4><a href="http://www.albany.edu/finearts" target="_blank">UAlbany Art Department</a></h4>
-			    <a href="http://www.albany.edu/finearts" target="_blank" class="thumbnail">
-			      <img src="images/artDept.jpg" alt="UAlbany Art Department" style="width:468;height:281;">
-			    </a>
-			  </div>
-			  <div class="col-md-4" align="center">
-			    <h4><a href="http://www.albany.edu/oaae" target="_blank">UAlbany OAEE</a></h4>
-			    <a href="http://www.albany.edu/oaae" target="_blank" class="thumbnail">
-			      <img src="images/oaae.jpg" alt="Office of Academic Access and Enrichment" style="width:468;height:281">
-			    </a>
-			  </div>
-			  <div class="col-md-4" align="center">
-			  	<h4><a href="http://www.albany.edu/eop" target="_blank">UAlbany EOP</a></h4>
-			    <a href="http://www.albany.edu/eop" target="_blank" class="thumbnail"> 
-			      <img src="images/eop.jpg" alt="UAlbany Educational Opportunity Program" style="width:468;height:281">
-			    </a>
-			  </div>
-			</div>-->
 		<div class="row">
 			<div class="projectsgrid">
 				
@@ -453,7 +434,7 @@ the Education Opportunity Program) using Hypertext Markup Language (HTML) and Ca
 					</article>
 					
 					<article class="showmore" data-sr="enter top and move 10% over 1.8s and reset">
-						<img src="images/eop.jpg" style="width:468;height:281;" alt="Art Department"/>
+						<img src="images/digitalPortfolio.jpg" style="width:468;height:281;" alt="Chris Onuorah Digital Portfolio"/>
 						<div class="info">
 							<h4>Chris Onuorah Digital Portfolio Site</h4>
 							<p>Showcasing my web development capabilities</p>
@@ -465,7 +446,7 @@ the Education Opportunity Program) using Hypertext Markup Language (HTML) and Ca
 								are embodied in Front End Web Development.  I genuinely enjoy creating new things and manifesting visions.  Web Development 
 								gives me a great opportunity to do that.  So I thought to myself, what better way is there to showcase my ability than to 
 								actually create my own site?  The journey of my web development growth resumes here!
-								 <b>Link:</b> <a href="http://www.albany.edu/eop" target="_blank"><span class="fa fa-link"></span></a>
+								 <b>Link:</b> <a href="http://www.chrisonuorah.com" target="_blank"><span class="fa fa-link"></span></a>
 							</p>
 						</div>
 					</article>
@@ -480,37 +461,37 @@ the Education Opportunity Program) using Hypertext Markup Language (HTML) and Ca
 
 <div class="bgPurple" id="contact">
 <div class="container-fluid p50 m200lr">
-<h2 style="color:white;">Contact</h2>
+<h2 class="contactColor">Contact</h2>
 <hr>
 	<div class="row">
 			<div class="col-md-4">
 				
-			<h3>Social Connect</h3>
+			<h3 class="contactColor">Social Connect</h3>
 				<ul class="no-bullets">
 					<li>
 						<a href="https://www.linkedin.com/in/christopher-onuorah-jr-57288728" target="_blank">
-							<span class="fa fa-linkedin-square"></span>
+							<span class="fa fa-4x fa-linkedin-square"></span>
 							 linkedin.com/in/christopher-onuorah-jr				</a>
 					</li>		
 				</ul>
 				
 			</div>
 			<div class="col-md-8">
-		<form role="form" class="form-horizontal">
+		<form role="form" class="form-horizontal" method="post" action="send_email_form.php">
 			<div class="form-group">
 				<table width="100%" border="0" cellspacing="0" cellpadding="5">
 				<tr>
-				<td width="15%"><label for="name">Name</label></td>
-				<td width="70%"><input type="text" class="validate[required,custom[onlyLetter]]" name="name" id="name" value="" /></td>
+				<td width="15%" class="contactColor"><label for="name">Name</label></td>
+				<td width="70%"><input type="text" name="name" id="name" value="" /></td>
 				<td width="15%" id="errOffset">&nbsp;</td>
 				</tr>
 				<tr>
-				<td><label for="email">Email</label></td>
-				<td><input type="text" class="validate[required,custom[email]]" name="email" id="email" value="" /></td>
+				<td class="contactColor"><label for="email">Email Address</label></td>
+				<td><input type="text" name="email" id="email" value="" /></td>
 				<td>&nbsp;</td>
 				</tr>
 				<tr>
-				<td><label for="subject">Subject</label></td>
+				<td class="contactColor"><label for="subject">Subject</label></td>
 				<td><select name="subject" id="subject">
 					<option value="" selected="selected"> - Choose -</option>
 					<option value="Question">Question</option>
@@ -520,13 +501,8 @@ the Education Opportunity Program) using Hypertext Markup Language (HTML) and Ca
 				<td>&nbsp;</td>
 				</tr>
 				<tr>
-				<td valign="top"><label for="message">Message</label></td>
-				<td><textarea name="message" id="message" class="validate[required]" cols="35" rows="5"></textarea></td>
-				<td valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-				<td><label for="captcha">10 + 11 =</label></td>
-				<td><input type="text" class="validate[required,custom[onlyNumber]]" name="captcha" id="captcha" /></td>
+				<td class="contactColor" valign="top"><label for="message">Message</label></td>
+				<td><textarea name="message" id="message" cols="35" rows="5"></textarea></td>
 				<td valign="top">&nbsp;</td>
 				</tr>
 				<tr>
@@ -534,12 +510,12 @@ the Education Opportunity Program) using Hypertext Markup Language (HTML) and Ca
 				<td colspan="2"><input type="submit" name="button" id="button" value="Submit" />
 				<input type="reset" name="button2" id="button2" value="Reset" />
 				
-				<div class="error">The name field is too short or empty!<br />The email field is too short or empty!<br />You have not selected a subject!<br />The message field is too short or empty!</div>          <img id="loading" src="images/ajax-load.gif" width="16" height="16" alt="loading" /></td>
 				</tr>
 			</table>
 			</div>
 			
 		</form>
+		
 			</div>
 		</div>
 						
