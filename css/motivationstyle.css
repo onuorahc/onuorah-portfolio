@@ -101,11 +101,13 @@ ul.no-bullets {list-style-type:none;}
 
 a {
   color: #533f5a; 
-  text-decoration:non:
-  &:hover {
+  text-decoration:none;
+ }
+ 
+a:hover {
     color: #796702;
-
-  }}
+    text-decoration:none;
+}
 
 .bgWhite {
 	background-color:white;
@@ -159,7 +161,7 @@ span.experience-details {
 	-o-background-size:cover;
 	height:100vh;
 	position:relative;
-	z-index:-1;
+	z-index:1;
 	background-repeat:no-repeat;
 	text-align: center;
 	color:white;
@@ -308,8 +310,11 @@ span.experience-details {
 .affix {
 	top:0;
 	width:100%;
-	-webkit-transition: all 4s ease-in;
-    transition: all 4s ease-in;
+	-webkit-transition: all .5s ease-in;
+	  -moz-transition:  all .5s ease-in;
+       -ms-transition:  all .5s ease-in;
+        -o-transition:  all .5s ease-in;
+    		transition: all .5s ease-in;
 }
 
 .gallery{margin:0 auto;}
