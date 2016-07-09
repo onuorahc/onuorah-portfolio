@@ -138,7 +138,7 @@ a:hover {
 p.experience-period {
 	font-style:italic;
 	padding:0px;
-	margin:5px 0px 15px;
+	margin:10px 0px 15px;
 }
 
 p.degree {
@@ -474,26 +474,62 @@ article.active>div:nth-child(3)>p:nth-child(2){margin:0 20px 0 0;}
     }
     .jumbotron .overlay .lead {font-size:24px;}
     
-    .scroll-button {
+    .jumbotron .scroll-button {
     	width:100%;
-    	right:0;
-    	}
+    	left:0;
+    	}    
     
+    #UAlbanyProfile{
+	width:70%;
+	height:auto;
+}
+    
+}
+
+@media only screen and (min-width: 768px){
+	.col-xs-1,.col-sm-1,.col-md-1,.col-lg-1,
+	.col-xs-2,.col-sm-2,.col-md-2,.col-lg-2,
+	.col-xs-3,.col-sm-3,.col-md-3,.col-lg-3,
+	.col-xs-4,.col-sm-4,.col-md-4,.col-lg-4,
+	.col-xs-5,.col-sm-5,.col-md-5,.col-lg-5,
+	.col-xs-6,.col-sm-6,.col-md-6,.col-lg-6,
+	.col-xs-7,.col-sm-7,.col-md-7,.col-lg-7,
+	.col-xs-8,.col-sm-8,.col-md-8,.col-lg-8,
+	.col-xs-9,.col-sm-9,.col-md-9,.col-lg-9,
+	.col-xs-10,.col-sm-10,.col-md-10,.col-lg-10,
+	.col-xs-11,.col-sm-11,.col-md-11,.col-lg-11,
+	.col-xs-12,.col-sm-12,.col-md-12,.col-lg-12 {
+		position:relative;
+		min-height:1px;
+		padding-right:15px;
+		padding-left:15px;
+		}
 }
 
 /* Mobile Phone view */
 @media only screen and (max-width: 767px) {
     .container-fluid { 
         margin: 0px 0px;
-        padding: 0px 15px;
+        padding: 0px 18px;
     }
     
     .hideinphone {display:none;}
     
-    .scroll-button {
-    	width:100%;
-    	right:0;
-    	}
+    #abilities ul {
+	padding-left:0;
+}
+    
+    h3{margin:25px 0px;}
+    
+    .jumbotron .overlay h1 {
+	font-size:58px;
+	font-weight:500;
+	padding-bottom:20px;
+	border-bottom:1px solid #FFF;
+	border-bottom-color:rgba(255,255,255,.35);
+	display:inline-block;
+	text-shadow:0 4px 3px rgba(0,0,0,.4),0 8px 13px rgba(0,0,0,.1),0 18px 23px rgba(0,0,0,.1);
+	}
     
     .jumbotron .overlay .lead {font-size:22px;}
     
@@ -509,6 +545,46 @@ article.active>div:nth-child(3)>p:nth-child(2){margin:0 20px 0 0;}
 	-moz-box-shadow:3px 3px 5px #888;
 	box-shadow:3px 3px 5px #888;
 	}
+	
+	.col-xs-1,.col-sm-1,.col-md-1,.col-lg-1,
+	.col-xs-2,.col-sm-2,.col-md-2,.col-lg-2,
+	.col-xs-3,.col-sm-3,.col-md-3,.col-lg-3,
+	.col-xs-4,.col-sm-4,.col-md-4,.col-lg-4,
+	.col-xs-5,.col-sm-5,.col-md-5,.col-lg-5,
+	.col-xs-6,.col-sm-6,.col-md-6,.col-lg-6,
+	.col-xs-7,.col-sm-7,.col-md-7,.col-lg-7,
+	.col-xs-8,.col-sm-8,.col-md-8,.col-lg-8,
+	.col-xs-9,.col-sm-9,.col-md-9,.col-lg-9,
+	.col-xs-10,.col-sm-10,.col-md-10,.col-lg-10,
+	.col-xs-11,.col-sm-11,.col-md-11,.col-lg-11,
+	.col-xs-12,.col-sm-12,.col-md-12,.col-lg-12 {
+		position:relative;
+		min-height:1px;
+		padding-right:15px;
+		padding-left:15px;
+		}
+		
+	p.experience-period {
+	font-style:italic;
+	padding:0px;
+	margin:10px 0px 15px;
 }
 
+	.ability-row{padding:0;}
 
+	.separator{display:none}
+
+	.uaSeal{
+	width:50%;
+	height:auto;
+}
+
+    .location {
+	padding:10px 0px 0px;
+	display:block;
+}
+
+	.link {
+	padding:10px 0px 0px;
+	display:block;
+}
