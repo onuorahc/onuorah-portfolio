@@ -280,11 +280,20 @@ span.experience-details {
 .affix {
 	top:0;
 	width:100%;
-	-webkit-transition: all .5s ease-in;
-	  -moz-transition:  all .5s ease-in;
-       -ms-transition:  all .5s ease-in;
-        -o-transition:  all .5s ease-in;
-    		transition: all .5s ease-in;
+	-webkit-transition: all .1s ease-in;
+	  -moz-transition:  all .1s ease-in;
+       -ms-transition:  all .1s ease-in;
+        -o-transition:  all .1s ease-in;
+    		transition: all .1s ease-in;
+}
+
+.affix-top {
+  width: 100%;
+}
+
+.affix-bottom {
+  position: absolute;
+  width: 100%;  
 }
 
 .gallery{margin:0 auto;}

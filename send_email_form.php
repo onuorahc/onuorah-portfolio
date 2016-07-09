@@ -8,7 +8,7 @@ if(isset($_POST['email'])) {
  
     $email_to = "cionuorah@gmail.com";
  
-    $email_subject = $_POST["subject"];
+    $email_subject = "New message on ChrisOnuorah.com - $_POST['name'] Emailed You;
  
      
  
@@ -24,7 +24,7 @@ if(isset($_POST['email'])) {
  
         echo $error."<br /><br />";
  
-        echo "Please go back and fix these errors.<br /><br />";
+        echo "Please go back to fix these errors.<br /><br />";
  
         die();
  
