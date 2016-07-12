@@ -127,6 +127,7 @@ span.experience-details {
 	background-image: url("../images/ualbanyFountain.jpg");
 	background-attachment:fixed;
 	background-size:cover;
+	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	height:100vh;
@@ -435,7 +436,10 @@ article.active>div:nth-child(3)>p:nth-child(2){margin:0 20px 0 0;}
 	text-decoration:none;
 	}	
 .contactColor {color:#f5f5dc;}
+
 #contact input .text {color:#aaaaaa;}
+
+
 	
 /* Computer screen view only */
 @media only screen and (min-width: 992px) {
@@ -514,7 +518,7 @@ article.active>div:nth-child(3)>p:nth-child(2){margin:0 20px 0 0;}
     
     projectsgrid article {
 	cursor:pointer;
-	max-width:390px;
+	width:90%;
 	height:265px;
 	float:left;
 	margin:10px 15px;
@@ -523,6 +527,12 @@ article.active>div:nth-child(3)>p:nth-child(2){margin:0 20px 0 0;}
 	-webkit-box-shadow:3px 3px 5px #888;
 	-moz-box-shadow:3px 3px 5px #888;
 	box-shadow:3px 3px 5px #888;
+	}
+	
+	.projectsgrid article:hover, article:active .info {
+	background-color:#796702;
+	color:white;
+	text-shadow: 1px 1px black;
 	}
 	
 	.col-xs-1,.col-sm-1,.col-md-1,.col-lg-1,
