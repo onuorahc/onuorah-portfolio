@@ -52,6 +52,10 @@ p	{
 
 ul.no-bullets {list-style-type:none;}
 
+#contact .no-bullets > li {margin:20px 0px;}
+
+#contact form {margin-left: 5px;}
+
 #abilities ul > li {
 	padding:3px 0;
 	min-height:30px;
@@ -521,7 +525,7 @@ article.active>div:nth-child(3)>p:nth-child(2){margin:0 20px 0 0;}
 	width:90%;
 	height:265px;
 	float:left;
-	margin:10px 15px;
+	margin:10px 0px;
 	overflow:hidden;
 	position:relative;
 	-webkit-box-shadow:3px 3px 5px #888;
